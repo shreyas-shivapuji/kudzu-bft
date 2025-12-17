@@ -1,10 +1,10 @@
 use clap::Parser;
-use kudzu_net::net::{Msg, UdpNet, peer_addrs};
-use kudzu_net::protocol::{Action, Replica, DELTA_TIMEOUT};
-use kudzu_net::voting::FirstVote;
-use kudzu_net::metrics::{Metrics, SlotTimer};
-use kudzu_net::types::leader_for_slot;
-use kudzu_net::Slot;
+use kudzu_bft::net::{Msg, UdpNet, peer_addrs};
+use kudzu_bft::protocol::{Action, Replica, DELTA_TIMEOUT};
+use kudzu_bft::voting::FirstVote;
+use kudzu_bft::metrics::{Metrics, SlotTimer};
+use kudzu_bft::types::leader_for_slot;
+use kudzu_bft::Slot;
 use log::{debug, info, warn};
 use std::sync::Arc;
 use std::time::{Duration, Instant};
